@@ -41,7 +41,7 @@ class WireGuardSettingsActivity : ProfileSettingsActivity<WireGuardBean>() {
         pbm.setPreferenceFragment(this)
 
         (serverPort.preference as EditTextPreference)
-            .setOnBindEditTextListener(EditTextPreferenceModifiers.Port)
+            .setOnBindEditTextListener(EditTextPreferenceModifiers.PortRange)
         (privateKey.preference as EditTextPreference).summaryProvider = PasswordSummaryProvider
         (mtu.preference as EditTextPreference).setOnBindEditTextListener(EditTextPreferenceModifiers.Number)
     }

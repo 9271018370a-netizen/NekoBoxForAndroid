@@ -51,7 +51,7 @@ class ShadowsocksSettingsActivity : ProfileSettingsActivity<ShadowsocksBean>() {
 
         serverPort.preference.apply {
             this as EditTextPreference
-            setOnBindEditTextListener(EditTextPreferenceModifiers.Port)
+            setOnBindEditTextListener(EditTextPreferenceModifiers.PortRange)
         }
         password.preference.apply {
             this as EditTextPreference

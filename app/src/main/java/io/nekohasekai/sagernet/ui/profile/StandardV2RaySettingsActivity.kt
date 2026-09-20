@@ -90,12 +90,12 @@ abstract class StandardV2RaySettingsActivity : ProfileSettingsActivity<StandardV
 
         serverPort.preference.apply {
             this as EditTextPreference
-            setOnBindEditTextListener(EditTextPreferenceModifiers.Port)
+            setOnBindEditTextListener(EditTextPreferenceModifiers.PortRange)
         }
 
         alterId.preference.apply {
             this as EditTextPreference
-            setOnBindEditTextListener(EditTextPreferenceModifiers.Port)
+            setOnBindEditTextListener(EditTextPreferenceModifiers.PortRange)
         }
 
         uuid.preference.summaryProvider = PasswordSummaryProvider

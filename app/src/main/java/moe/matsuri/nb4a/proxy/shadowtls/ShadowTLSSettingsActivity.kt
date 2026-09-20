@@ -44,7 +44,7 @@ class ShadowTLSSettingsActivity : ProfileSettingsActivity<ShadowTLSBean>() {
 
         serverPort.preference.apply {
             this as EditTextPreference
-            setOnBindEditTextListener(EditTextPreferenceModifiers.Port)
+            setOnBindEditTextListener(EditTextPreferenceModifiers.PortRange)
         }
         password.preference.apply {
             this as EditTextPreference

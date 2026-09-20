@@ -21,6 +21,15 @@ object EditTextPreferenceModifiers {
         }
     }
 
+
+    object PortRange : EditTextPreference.OnBindEditTextListener {
+        override fun onBindEditText(editText: EditText) {
+            editText.inputType = EditorInfo.TYPE_CLASS_TEXT
+            editText.setSingleLine()
+            editText.setSelection(editText.text.length)
+        }
+    }
+
     object Port : EditTextPreference.OnBindEditTextListener {
         private val portLengthFilter = arrayOf(InputFilter.LengthFilter(5))
 

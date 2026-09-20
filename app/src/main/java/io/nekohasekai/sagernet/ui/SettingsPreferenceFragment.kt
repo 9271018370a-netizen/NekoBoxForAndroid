@@ -110,7 +110,7 @@ class SettingsPreferenceFragment : PreferenceFragmentCompat() {
             true
         }
 
-        mixedPort.setOnBindEditTextListener(EditTextPreferenceModifiers.Port)
+        mixedPort.setOnBindEditTextListener(EditTextPreferenceModifiers.PortRange)
 
         val metedNetwork = findPreference<Preference>(Key.METERED_NETWORK)!!
         if (Build.VERSION.SDK_INT < 28) {

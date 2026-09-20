@@ -60,7 +60,7 @@ class MieruSettingsActivity : ProfileSettingsActivity<MieruBean>() {
     ) {
         addPreferencesFromResource(R.xml.mieru_preferences)
         findPreference<EditTextPreference>(Key.SERVER_PORT)!!.apply {
-            setOnBindEditTextListener(EditTextPreferenceModifiers.Port)
+            setOnBindEditTextListener(EditTextPreferenceModifiers.PortRange)
         }
         findPreference<EditTextPreference>(Key.SERVER_PASSWORD)!!.apply {
             summaryProvider = PasswordSummaryProvider

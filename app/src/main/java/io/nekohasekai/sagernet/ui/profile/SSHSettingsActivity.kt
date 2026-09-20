@@ -52,7 +52,7 @@ class SSHSettingsActivity : ProfileSettingsActivity<SSHBean>() {
     ) {
         addPreferencesFromResource(R.xml.ssh_preferences)
         findPreference<EditTextPreference>(Key.SERVER_PORT)!!.apply {
-            setOnBindEditTextListener(EditTextPreferenceModifiers.Port)
+            setOnBindEditTextListener(EditTextPreferenceModifiers.PortRange)
         }
         val password = findPreference<EditTextPreference>(Key.SERVER_PASSWORD)!!.apply {
             summaryProvider = PasswordSummaryProvider

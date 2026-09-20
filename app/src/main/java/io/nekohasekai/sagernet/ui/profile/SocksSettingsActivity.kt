@@ -43,7 +43,7 @@ class SocksSettingsActivity : ProfileSettingsActivity<SOCKSBean>() {
     ) {
         addPreferencesFromResource(R.xml.socks_preferences)
         findPreference<EditTextPreference>(Key.SERVER_PORT)!!.apply {
-            setOnBindEditTextListener(EditTextPreferenceModifiers.Port)
+            setOnBindEditTextListener(EditTextPreferenceModifiers.PortRange)
         }
         val password = findPreference<EditTextPreference>(Key.SERVER_PASSWORD)!!.apply {
             summaryProvider = PasswordSummaryProvider
